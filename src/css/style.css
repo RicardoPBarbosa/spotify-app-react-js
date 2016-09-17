@@ -1,0 +1,107 @@
+body{background:#E9E9E9;margin:0;padding:0;width:100%;height:100%;font-family: 'Roboto', sans-serif;-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;}
+a{text-decoration:none;font-weight:400;color:white;}
+a:hover{color:white;}
+a:visited{color:white;text-decoration:none;}
+a:focus{color:white;text-decoration:none;}
+img{width:100%;}
+button{outline:none;border:none;}
+button:active{outline:none;border:none;}
+button:focus{outline:none;border:none;}
+#app{width:400px;margin:auto;margin-top:100px;position:relative;height:600px;overflow:hidden;background:#30383F;}
+#appWaves{width:100%;position:absolute;z-index:100;top:50%;transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out;}
+.hide{display:none;}
+.transition{transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out;}
+.clear{clear:both;}
+
+.introPage{width:100%;height:600px;color:white;text-align:center;position:absolute;}
+.introPage h2{text-align:center;font-weight:200;}
+.introPage b{font-weight:300;}
+.introPage img{width:25%;margin-top:35%;}
+.introPage button{background:#1ed760;border-radius:30px;padding:15px 0px;width:70%;margin-top:30%;font-weight:300;font-size:1.5em;}
+.introPage button:hover{background:#15B54E;}
+.introPage p{position:absolute;bottom:0;width:100%;text-align:center;}
+.introPage a{font-weight:300;color:#A1A1A1;}
+.introPage a:hover{text-decoration:none;color:white;}
+
+.mainScreen{display:none;width:100%;height:600px;color:white;position:absolute;}
+
+.menuSearch{float:left;width:100%;background:#262D33;padding:10px 20px;height:60px;}
+.menuSearch > span{float:left;width:10%;text-align:center;font-size:1.5em;margin-right:20px;line-height:40px;cursor:pointer;}
+.menuSearch form{float:left;width:80%;line-height:39px;}
+.menuSearch .input-group-addon{background:transparent;border:none;color:white;font-size:1.2em;}
+.menuSearch form input{width:100%;background:transparent;outline:none;border:none;font-size:1.3em;font-weight:300;}
+.menuSearch p{float:left;width:80%;line-height:40px;font-weight:400;font-size:1.3em;font-weight:300;}
+
+.selected{border-left:3px solid #15B54E;}
+.menuOpen{display:none;width:100%;height:600px;color:white;position:absolute;}
+.menuOpen .content{text-align:center;float:left;width:80%;height:600px;background:#262D33;background:url(../img/menuBack.jpg) no-repeat;padding:40px 10px;}
+.menuOpen .content img{width:30%;margin-bottom:30px;}
+.menuOpen .content p{text-align:left;width:100%;height:50px;float:left;line-height:50px;font-size:2em;font-weight:500;}
+.menuOpen .content p:hover{background:rgba(47, 56, 63, 0.2);cursor:pointer;}
+.menuOpen .content p i{margin:0px 20px;}
+.menuOpen .closeMenu{float:left;width:20%;height:600px;background:transparent;cursor:pointer;}
+
+.genresTitle{width:100%;text-align:center;font-size:1.3em;font-weight:500;margin-bottom:10px;}
+.categories{float:left;width:100%;padding:10px 20px;max-height:540px;overflow:hidden;overflow-y:scroll;width:104%;}
+.noCats{float:left;width:100%;padding:10px 20px;height:540px;text-align:center;font-weight:300;font-size:1.7em;}
+.noCats i{float:left;width:100%;font-size:3em;margin:47% 0 20px 0;}
+.noCats small{font-size:0.6em;opacity:0.6;font-weight:400;color:#15B54E;}
+.categories .singleCategory{position:relative;float:left;width:47%;text-align:center;cursor:pointer;height:130px;margin-bottom:15px;line-height:200px;overflow:hidden;font-size:1.1em;font-weight:300;}
+.categories .singleCategory img{width:100%;position:absolute;left:0;z-index:-2;top:-25px;}
+.categories .singleCategory a{float:left;width:100%;}
+.categories .singleCategory:nth-child(2n+1){margin-right:20px;}
+
+.makeSearch{float:left;width:100%;padding:10px 20px;height:540px;text-align:center;font-weight:300;font-size:1.3em;}
+.makeSearch i{float:left;width:100%;font-size:2.5em;margin:47% 0 20px 0;}
+.makeSearch b{font-weight:500;}
+
+.searchResults{float:left;width:100%;padding:10px 20px;max-height:540px;overflow:hidden;overflow-y:scroll;width:104%;}
+
+.noResults{width:100%;text-align:center;font-weight:300;}
+.artistsResults, .albumsResults, .tracksResults{width:100%;height:100%;margin-bottom:20px;}
+.singleItem, .singleAlbum, .singleTrack{width:100%;height:100px;cursor:pointer;color:white;background:#262D33;margin-bottom:10px;padding:10px;font-weight:300;overflow:hidden;}
+.singleItem:hover, .singleAlbum:hover, .singleTrack:hover{background:#2A3137;}
+.singleItem a i{font-size:2.5em;color:#D4D4D4;margin:25px 15px 0px 0px;float:right;}
+.singleItem a i:hover{color:#15B54E;}
+.singleItem .cover{float:left;border-radius:50%;text-align:center;}
+.singleItem .cover, .singleItem img{background:#30383F;width:80px !important;height:80px;vertical-align:middle;}
+.singleItem .fa-user, .singleItem .fa-folder-open{line-height:86px;font-size:2em;opacity:0.5;}
+.singleItem > div{float:left;width:50%;height:100%;margin-left:10px;}
+.singleItem .followers{font-weight:300;color:#9F9F9F;}
+.singleItem .name{font-size:1.1em;font-weight:400;}
+.singleItem .authorAlbum{font-weight:300;color:#9F9F9F;}
+
+.singlePage{display:none;width:110%;padding:20px;height:600px;color:white;position:absolute;background:rgba(0,0,0,0.9);background:url(../img/singlePage.jpg) no-repeat;z-index:50;overflow-y:scroll;}
+.singlePage #goBack{width:100%;float:left;}
+.singlePage #goBack img{width:40px;height:40px;cursor:pointer;}
+.singlePage #goBack img:hover{opacity:0.8;}
+.singlePage .singleItemDesc{width:95%;float:left;text-align:center;}
+.singlePage .singleItemDesc .itemName{width:100%;float:left;font-size:1.6em;font-weight:500;margin:15px 0px;}
+.singlePage .singleItemDesc .albumOwner{width:100%;float:left;font-size:1.1em;font-weight:300;margin:15px 0px;}
+.singlePage .singleItemDesc .artistFollowers{width:100%;float:left;font-weight:300;color:#D9D9D9;}
+.singlePage .singleItemDesc .cover{border-radius:50%;}
+.singlePage .singleItemDesc .cover, .singleItemDesc img{background:#30383F;width:140px !important;height:130px;vertical-align:middle;}
+.singlePage .singleItemDesc .noCover{background:#30383F;width:140px !important;height:130px;vertical-align:middle;line-height:130px;font-size:2.5em;color:#D4D4D4;border-radius:50%;}
+.singlePage .singleItemDesc button{background:#1ed760;border-radius:30px;padding:8px 0px;margin:25px 0px;width:70%;font-weight:500;font-size:1.3em;}
+.singlePage .singleItemDesc button i{margin-right:10px;}
+.singlePage .singleItemDesc button:hover{background:#15B54E;}
+.singlePage .topTrackTitle{width:100%;float:left;font-size:1.3em;font-weight:500;margin-bottom:10px;}
+.singlePage .artistTopTracks{float:left;width:100%;margin-bottom:10px;text-align:center;}
+.singlePage .artistTopTracks .topTrackSingle{width:100%;text-align:left;float:left;padding:5px 10px;cursor:pointer;height:35px;overflow:hidden;}
+.singlePage .artistTopTracks .topTrackSingle:hover{background:rgba(84, 84, 84, 0.5);}
+.singlePage .artistTopTracks .topTrackSingle .track{font-size:1.1em;font-weight:400;color:#C5C5C5;}
+.singlePage .artistTopTracks .topTrackSingle .track small{font-weight:300;color:#A3A3A3;}
+.singlePage .artistTopTracks .topTrackSingle .track b{font-size:1.1em;font-weight:500;margin-right:5px;color:white;}
+.singlePage .artistAlbums{float:left;width:100%;margin-bottom:10px;text-align:center;}
+.singlePage .artistAlbums .albumSingle{width:50%;float:left;text-align:center;cursor:pointer;height:180px;overflow:hidden;margin-bottom:5px;padding:10px 0px;}
+.singlePage .artistAlbums .albumSingle:hover{background:rgba(84, 84, 84, 0.5);}
+.singlePage .artistAlbums .albumSingle .album{float:left;width:100%;}
+
+.trackBar{display:none;width:100%;padding:15px;height:80px;bottom:0;color:white;position:absolute;background:rgba(0,0,0,0.9);z-index:50;}
+.trackBar div{height:100%;}
+.trackBar .closeTrack{width:15%;height:100%;float:left;line-height:50px;text-align:center;font-size:2em;}
+.trackBar .trackInfos{width:65%;height:100%;float:left;font-size:1.2em;padding-left:20px;}
+.trackBar .trackInfos small{font-size:0.9em;font-weight:300;color:#B3B3B3;}
+.trackBar .playTrack{width:20%;height:100%;float:left;line-height:50px;text-align:center;font-size:2em;}
+.trackBar .playTrack i, .trackBar .closeTrack i{cursor:pointer;}
+.trackBar .playTrack i:hover, .trackBar .closeTrack i:hover{color:#15B54E;}
