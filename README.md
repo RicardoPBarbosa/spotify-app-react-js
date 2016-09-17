@@ -2,6 +2,8 @@
 
 ####Spotify Mobile App with ReactJS & Spotify API
 
+![Screenshot](screenshot.gif)
+
 ## Config
 
 Some of the API calls made require an OAuth Token that you can get [here](https://developer.spotify.com/web-api/console/get-artist/) clicking in the *Get OAuth Token* button. This token has a limited time (since the app was made for learning purposes only i didn't search for a workaround)<br><br>
