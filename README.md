@@ -1,6 +1,6 @@
 # Spotify App
 
-####Spotify Mobile App with ReactJS & Spotify API
+#### Spotify Mobile App with ReactJS & Spotify API
 
 ![Screenshot](screenshot.gif)
 
